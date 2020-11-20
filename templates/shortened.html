@@ -1,0 +1,7 @@
+<h1>You shortened a url!</h1>
+
+<a href="/s/{{ shortened }}">{{ shortened }}</a>
+<script>
+	const anchor = document.querySelector('a')
+	anchor.innerText = window.location.origin + '/s/' + anchor.innerText;
+</script>
