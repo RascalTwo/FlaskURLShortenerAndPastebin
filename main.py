@@ -53,7 +53,7 @@ def recieve_paste(id: Optional[int]=None):
 		id = len(pastes)
 		pastes.append(content)
 
-	return render_template('paste.html', id=id, content=pastes[id])
+	return redirect(f'/p/{id}')
 
 @app.route('/p/<id>')
 def paste(id: int):

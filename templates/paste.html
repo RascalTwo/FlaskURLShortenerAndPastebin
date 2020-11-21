@@ -1,6 +1,6 @@
 <h1>Paste #{{ id }}</h1>
 
-<form action="/paste/{{ id }}" method="POST">
+<form action="/paste/{{ id }}" method="POST" autocomplete="off">
 	<textarea name="content">{{ content }}</textarea>
 	<br/>
 	<button type="submit">Update</button>
